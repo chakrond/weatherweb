@@ -9,7 +9,7 @@ const weathstck = require('./utils/weathstck')
 
 const app = express()
 const port = process.env.PORT || 3000
-
+//
 // Define paths for Express config
 const publicdir = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
