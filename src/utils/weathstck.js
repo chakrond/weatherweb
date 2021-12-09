@@ -19,7 +19,7 @@ const weathstck = ([lat, long], callback) => {
         } else {
 
             // Get data
-            const { temperature, feelslike, weather_descriptions } = response.body.current
+            const { temperature, feelslike, weather_descriptions, humidity } = response.body.current
             // const temp = response.body.current.temperature
             // const feel = response.body.current.feelslike
             // const wdes = response.body.current.weather_descriptions
@@ -28,7 +28,7 @@ const weathstck = ([lat, long], callback) => {
                 feelslike: feelslike,
                 descriptions: weather_descriptions,
                 forcast: "It's currently " + temperature + 
-                    " C. Feels like " + feelslike + " C. It's " + weather_descriptions +"."
+                    " C. Feels like " + feelslike + " C. It's " + weather_descriptions + ". Humidity is " + humidity + "%."
             }
 
             // callback(undefined, "It's currently " + info.temperature + 
