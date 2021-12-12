@@ -125,7 +125,7 @@ app.listen(port, () => {
     console.log('Server is up on port ' + port)
 
 })
-
+//
 // app.get('/weather', (req, res) => {
 //     res.send({
 
